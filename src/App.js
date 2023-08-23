@@ -7,7 +7,6 @@ import {
 } from "react-router-dom";
 
 import Home from './pages/Home'
-import QRscan from './pages/QRscanner'
 import Visitas from './pages/crearVisita'
 
 function App() {
@@ -20,15 +19,9 @@ function App() {
               <Route exact path="/">
                 <Home/>
               </Route>
-              <Route path="/qr_scanner">
-                <QRscan/>
-              </Route>
               <Route path="/crearVisita">
               <Visitas/>
               </Route>
-
-             
-
             </Switch>
 
           </div>
