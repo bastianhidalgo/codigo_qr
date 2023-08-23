@@ -1,5 +1,4 @@
 import { Button} from '@material-ui/core';
-import { Link } from "react-router-dom";
 import { useState, useEffect } from 'react';
 import { clienteAxios } from '../clienteAxios';
 
@@ -35,17 +34,13 @@ function Home() {
                 <div  >
 
 
-                    <Link to="/qr_scanner" >
                     <Button style={{width:300, height:50}}  variant="contained"  color="primary">
                         Escanear cédula de identidad
                     </Button>
-                    </Link>
 
-                    <Link to="/crearVisita" >
                     <Button style={{width:300, height:50, marginLeft:50}} variant="contained"  color="primary">
                         Agregar visita
                     </Button>
-                    </Link>
 
                 </div>
 
@@ -77,12 +72,9 @@ function Home() {
                         <td>{visita.apellido}</td>
                         <td>{visita.telefono}</td>
                         <td>
-                          <Link >
                           <Button style={{backgroundColor:'yellow'}}  >Modificar</Button>
-                        </Link>
-                        <Link >
+
             <Button style={{backgroundColor:'green',marginLeft:40}}  >Ver</Button>
-            </Link>
             </td>
             
                 </tr>
